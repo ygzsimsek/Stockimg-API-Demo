@@ -20,7 +20,7 @@ This is a minimal demo application that shows how to use the [Stockimg.ai API](h
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ygzsimsek/sai-api-demo/
+   git clone https://github.com/ygzsimsek/Stockimg-API-Demo/
    cd stockimg-api-demo
    ```
 
