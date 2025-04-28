@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stockimg API Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Image element to display the generated image -->
+  <img id="image" alt="Generated Image" />
+
+  <!-- Input field where the user types the image prompt -->
+  <input type="text" id="promptInput" placeholder="Enter your prompt here...">
+
+  <!-- Dropdown menu to select the image dimensions -->
+  <select id="imageOptions">
+    <option value="horizontal">Horizontal (1280x736)</option>
+    <option value="vertical">Vertical (736x1280)</option>
+    <option value="square">Square (1024x1024)</option>
+  </select>
+
+  <!-- Dropdown menu to select the AI model for generation, you can set these anyway you like. For more information about models, visit: https://stockimg.ai/api-docs/get-started -->
+  <select id="modelOptions">
+    <option value="/v1/text-to-image/stock-image/stockimg">Stockimg</option>
+    <option value="/v1/text-to-image/stock-image/cinematic">Cinematic</option>
+    <option value="/v1/text-to-image/stock-image/knolling">Knolling</option>
+    <option value="/v1/text-to-image/stock-image/polaroid">Polaroid</option>
+    <option value="/v1/text-to-image/wallpaper">Wallpaper</option>
+    <option value="/v1/text-to-image/art/art">Art</option>
+    <option value="/v1/text-to-image/flux/pro">Flux Pro</option>
+    <option value="/v1/text-to-image/flux/dev">Flux Dev</option>
+    <option value="/v1/text-to-image/flux/scnell">Flux Schnell</option>
+  </select>
+
+  <!-- Button that triggers the image generation process -->
+  <button id="generateButton">Generate</button>
+
+  <!-- Spinner element displayed during image generation -->
+  <div id="spinner"></div>
+
+  <!-- Toast notification for success and error messages -->
+  <div id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
